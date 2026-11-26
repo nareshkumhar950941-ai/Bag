@@ -1,0 +1,10 @@
+pyrofork
+TgCrypto
+requests
+aiohttp
+dkbotzdb
+pymongo
+pytz
+yt-dlp
+Pillow
+hachoir

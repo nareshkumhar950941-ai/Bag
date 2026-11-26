@@ -1,0 +1,81 @@
+{
+  "name": "MX Player Downloader Bot",
+  "description": "A Powerful Telegram Bot To Download Videos From MX Player With High Speed By @DKBOTZ",
+  "logo": "https://files.catbox.moe/2p9kkv.png",
+  "keywords": [
+    "telegram",
+    "bot",
+    "mxplayer",
+    "downloader",
+    "pyrogram",
+    "ffmpeg",
+    "dkbotz",
+    "dkbotzpro"
+  ],
+  "repository": "https://github.com/DKBOTZPROJECT/MX-Player-Downloader-Bot",
+  "success_url": "https://t.me/MX_Player_Downloader_Bot",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID. Get From https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash. Get From https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token. Get From @BotFather On Telegram",
+      "required": true
+    },
+    "MX_PLAYER_API_KEY": {
+      "description": "Your MX Player API Key. Buy From @DKBOTZHELP_4",
+      "required": true
+    },
+    "OWNER_USERNAME": {
+      "description": "Bot Owner Username (default: DKBOTZHELP)",
+      "required": false,
+      "value": "DKBOTZHELP"
+    },
+    "UPI_ID": {
+      "description": "Your UPI ID For Payments (default: dkbotzpro@ybl)",
+      "required": false,
+      "value": "dkbotzpro@ybl"
+    },
+    "CHANNEL_USERNAME": {
+      "description": "Your Channel Username Without @ (default: DKBOTZ)",
+      "required": false,
+      "value": "DKBOTZ"
+    },
+    "LOG_CHANNEL": {
+      "description": "Private Channel ID For Logs (must start with -100)",
+      "required": false
+    },
+    "FSUB_CHANNEL": {
+      "description": "Force Subscribe Channel ID (must start with -100)",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "Space Separated Admin User IDs",
+      "required": false,
+      "value": "1805398747 5111685964"
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB Database URL",
+      "required": false
+    },
+    "DATABASE_NAME": {
+      "description": "Database Name (default: DKBOTZMXDOWNLOADER)",
+      "required": false,
+      "value": "DKBOTZMXDOWNLOADER"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
